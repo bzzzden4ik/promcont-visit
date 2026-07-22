@@ -55,6 +55,45 @@ h2 {
 .overlay.show {
     display: flex;
 }
+.overlay__container {
+    position: relative;
+}
+.overlay__close {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.overlay__container form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    gap: 20px;
+}
+.overlay__container form h3 {
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+.overlay__container form input {
+    padding: 20px 75px 20px 10px;
+    border: 1px solid #c2c2c2;
+    border-radius: 10px;
+}
+.overlay__container form button {
+    padding: 20px 20px 20px 10px;
+    border: 1px solid #0079c2;
+    border-radius: 10px;
+    background-color: #0079c2;
+    color: #fff;
+    font-size: 21px;
+    transition: .3s;
+}
+.overlay__container form button:hover {
+    background-color: #fff;
+    color: #0079c2;
+}
 /* HEADER */
 .header__contacts{
     padding: 20px 0;
@@ -871,6 +910,14 @@ h2 {
     }
     .main__why-us-cards {
         gap: 40px;
+    }
+}
+@media (max-width: 440px) {
+    .overlay__container form {
+        padding: 25px;
+    }
+    .overlay__container form input {
+        padding: 20px 50px 20px 10px;
     }
 }
 @media (max-width: 320px) {
