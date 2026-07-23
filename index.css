@@ -37,7 +37,7 @@ h2 {
     display: flex;
     max-width: 1500px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 10px;
 }
 /* OVERLAY */
 .overlay {
@@ -752,7 +752,6 @@ h2 {
     }
     .main__hero {
         padding-top: 0;
-        padding-bottom: 25px;
     }
     .main__topics {
         margin-top: 25px;
@@ -813,6 +812,23 @@ h2 {
     }
 }
 @media (max-width: 768px) {
+    main section, .why-us__description, .why-us__outro {
+        margin-top: 25px !important;
+    }
+    .main__why-us-cards {
+        margin-top: 50px;
+    }
+    .main__why-us-card {
+        padding: 40px 20px 20px 20px;
+    }
+    .pluses-card__title {
+        font-size: 1.15rem;
+        padding: 10px;
+    }
+    .pluses-card__exmaples {
+        gap: 20px;
+        padding: 10px;
+    }
     h2 {
         font-size: 1.75rem;
     }
@@ -868,6 +884,29 @@ h2 {
     }
 }
 @media (max-width: 550px) {
+    .topics-card__icon {
+        width: 75px !important;
+        margin-bottom: 10px;
+    }
+    .why-us-intro__card img {
+        width: 75px !important;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .main__hero {
+        padding-bottom: 0;
+    }
+    .main__topics-cards {
+        margin-top: 20px;
+        gap: 10px;
+    }
+    .why-us-intro__cards {
+        gap: 10px;
+    }
+    .intro-card__desc {
+        margin-top: 10px;
+    }
     .main__hero-paragraph {
         margin-bottom: 10px;
     }
