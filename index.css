@@ -51,6 +51,15 @@ h2 {
   display: none;
   justify-content: center;
   align-items: center;
+  animation: fadein 0.2s ease-in-out;
+}
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }
 .overlay.show {
     display: flex;
@@ -788,6 +797,9 @@ h2 {
     }
 }
 @media (max-width: 960px) {
+    .main__hero {
+        padding-bottom: 0;
+    }
     .menu__icon {
         display: block;
     }
@@ -814,6 +826,9 @@ h2 {
 @media (max-width: 768px) {
     main section, .why-us__description, .why-us__outro {
         margin-top: 25px !important;
+    }
+    .main__hero {
+        margin-top: 0 !important;
     }
     .main__why-us-cards {
         margin-top: 50px;
