@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="./assets/short_logo.png" type="image/png">
     <meta name="description" content="Облачный мониторинг станков. Без покупки оборудования и установки ПО по всей России. Получить консультацию и заказать мониторинг можно по номеру телефона +7 (953) 691-73-82.">
-    <title>Промышленный контроль - Мониториг станков</title>
+    <title>Промышленный контроль — Мониторинг станков</title>
 </head>
-<body>
+<body id="main">
     <!-- #A1A1A0 - gray
     #0079c2 - blue
     #FFFFFF - white -->
@@ -25,54 +25,43 @@
             </form>
         </div>
     </div>
-    <header class="header" id="main">
-        <div class="header__contacts">
-            <div class="container">
-                <ul class="header__contacts-items">
-                    <li class="header__contacts-item location">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#0079c2"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
-                        <span>обл.Кировская, г.Киров, ул.Профсоюзная, д.11</span>
-                    </li>
-                    <li class="header__contacts-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#0079c2"><path d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
-                        <a href="tel:+71234567890">+7 (953) 691-73-82</a>
-                    </li>
-                    <li class="header__contacts-item">
-                        <button class="header__contacts-button overlay__button">Заказать звонок</button>
-                    </li>
-                </ul>
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top__item">
+                <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#0079c2"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                <span>обл. Кировская, г. Киров, ул. Профсоюзная, д. 11</span>
             </div>
         </div>
+    </div>
+    <header class="header">
         <div class="header__nav-container">
             <div class="container">
-                <img src="./assets/Logo-reverse.png" alt="" class="header__logo">
-                <nav class="header__nav">
-                    <ul class="header__nav-items">
-                        <li class="header__nav-item"><a href="#main">Главная</a></li>
-                        <li class="header__nav-item"><a href="#how">Как работает</a></li>
-                        <li class="header__nav-item"><a href="#about">О нас</a></li>
-                        <li class="header__nav-item"><a href="#examples">Кейсы</a></li>
-                        <li class="header__nav-item"><a href="#reviews">Отзывы</a></li>
-                        <li class="header__nav-item"><a href="#contacts">Контакты</a></li>
+                <a href="#main"><img src="./assets/Logo-reverse.png" alt="PROMCONT — Промышленный контроль" class="header__logo"></a>
+                <div class="header__menu">
+                    <nav class="header__nav">
+                        <ul class="header__nav-items">
+                            <li class="header__nav-item"><a href="#main">Главная</a></li>
+                            <li class="header__nav-item"><a href="#how">Как работает</a></li>
+                            <li class="header__nav-item"><a href="#about">О нас</a></li>
+                            <li class="header__nav-item"><a href="#examples">Кейсы</a></li>
+                            <li class="header__nav-item"><a href="#reviews">Отзывы</a></li>
+                            <li class="header__nav-item"><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <ul class="header__contacts-items">
+                        <li class="header__contacts-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                            <a href="tel:+79536917382">+7 (953) 691-73-82</a>
+                        </li>
+                        <li class="header__contacts-item">
+                            <button class="header__contacts-button overlay__button">Заказать звонок</button>
+                        </li>
                     </ul>
-                </nav>
-                <svg class="menu__icon" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-            </div>
-        </div>
-        <div class="header__nav-container hidden additional">
-            <div class="container">
-                <img src="./assets/Logo-reverse.png" alt="" class="header__logo">
-                <nav class="header__nav">
-                    <ul class="header__nav-items">
-                        <li class="header__nav-item"><a href="#main">Главная</a></li>
-                        <li class="header__nav-item"><a href="#how">Как работает</a></li>
-                        <li class="header__nav-item"><a href="#about">О нас</a></li>
-                        <li class="header__nav-item"><a href="#examples">Кейсы</a></li>
-                        <li class="header__nav-item"><a href="#reviews">Отзывы</a></li>
-                        <li class="header__nav-item"><a href="#contacts">Контакты</a></li>
-                    </ul>
-                </nav>
-                <svg class="menu__icon" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                </div>
+                <button class="menu__icon" type="button" aria-label="Открыть меню" aria-expanded="false">
+                    <svg class="menu__icon-open" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+                    <svg class="menu__icon-close" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </button>
             </div>
         </div>
     </header>
@@ -86,21 +75,21 @@
                     <p class="main__hero-paragraph">Исключение влияния субъективных оценок персонала при планировании ТОиР и оценке загрузки мощностей.</p>
                     <div class="main__hero-icons">
                         <div class="main__hero-icon">
-                            <img src="./assets/Icon1.png" alt="" srcset="">
-                            <p class="main__hero-icon-subtitle"><span>+ 15-40%</span> Загрузка оборудования</p>
+                            <img src="./assets/Icon1.png" alt="Иконка станка" srcset="">
+                            <p class="main__hero-icon-subtitle"><span>+ 15–40%</span> Загрузка оборудования</p>
                         </div>
                         <div class="main__hero-icon">
-                            <img src="./assets/Icon2.png" alt="" srcset="">
-                            <p class="main__hero-icon-subtitle"><span>- 25-50%</span> Внеплановые простои</p>
+                            <img src="./assets/Icon2.png" alt="Иконка завода" srcset="">
+                            <p class="main__hero-icon-subtitle"><span>- 25–50%</span> Внеплановые простои</p>
                         </div>
                         <div class="main__hero-icon">
-                            <img src="./assets/Icon3.png" alt="" srcset="">
+                            <img src="./assets/Icon3.png" alt="Иконка рабочего" srcset="">
                             <p class="main__hero-icon-subtitle"><span>- 30%</span> Бюджет ТОиР</p>
                         </div>
                     </div>
                 </div>
                 <div class="main__hero-right">
-                    <img src="./assets/Welcome.png" alt="">
+                    <img src="./assets/Welcome.png" alt="Специалисты на производстве отслеживают работу станков на мониторе и в смартфоне">
                 </div>
             </div>
         </section>
@@ -109,23 +98,23 @@
                 <h2 class="main__topics-title">КЛЮЧЕВЫЕ ЭФФЕКТЫ ОТ ВНЕДРЕНИЯ</h2>
                 <div class="main__topics-cards">
                     <div class="main__topics-card">
-                        <img src="./assets/Icon1.png" alt="" class="topics-card__icon">
+                        <img src="./assets/Icon1.png" alt="Иконка станка" class="topics-card__icon">
                         <p class="topics-card__paragraph"><span>Рост выработки</span> — прирост объема выпуска на <span>до 20–30%</span> без покупки новых станков за счет ликвидации скрытых потерь времени.</p>
                     </div>
                     <div class="main__topics-card">
-                        <img src="./assets/Icon1.png" alt="" class="topics-card__icon">
+                        <img src="./assets/Icon1.png" alt="Иконка станка" class="topics-card__icon">
                         <p class="topics-card__paragraph"><span>Снижение простоев</span> — точная диагностика причин остановок (включая ремонтные циклы) для повышения коэффициента загрузки оборудования (OEE).</p>
                     </div>
                     <div class="main__topics-card">
-                        <img src="./assets/Icon4.svg" alt="" class="topics-card__icon">
+                        <img src="./assets/Icon4.svg" alt="Иконка рабочего" class="topics-card__icon">
                         <p class="topics-card__paragraph"><span>Объективный контроль</span> — автоматический мониторинг персонала (включая ночные смены) без видеокамер и субъективной оценки, что укрепляет дисциплину.</p>
                     </div>
                     <div class="main__topics-card">
-                        <img src="./assets/Icon1.png" alt="" class="topics-card__icon">
+                        <img src="./assets/Icon1.png" alt="Иконка станка" class="topics-card__icon">
                         <p class="topics-card__paragraph"><span>Дистанционное управление</span> — руководство получает прозрачные отчеты в реальном времени с любого устройства из любой точки мира, исключая «человеческий фактор».</p>
                     </div>
                 </div>
-                <div class="main__topic-conslusion">
+                <div class="main__topic-conclusion">
                     <p class="main__topic-paragraph"><span>Финансовый результат</span> — рост маржинальности и конкурентоспособности за счет увеличения выпуска на уже имеющихся мощностях без дополнительных инвестиций в парк оборудования и штат.</p>
                 </div>
                 <div class="main__topic-leave">
@@ -174,27 +163,27 @@
                     <h2 class="main__why-us-title">PROMCONT: Подписной IIoT-сервис для сбора данных со станков</h2>
                     <div class="why-us-intro__cards">
                         <div class="why-us-intro__card">
-                            <img src="./assets/Icon1.png" alt="">
+                            <img src="./assets/Icon1.png" alt="Иконка станка">
                             <p class="intro-card__title">Модель работы</p>
                             <p class="intro-card__desc">Аренда оборудования + ПО по подписке. Капитальных затрат (CAPEX) нет.</p>
                         </div>
                         <div class="why-us-intro__card">
-                            <img src="./assets/Icon1.png" alt="">
+                            <img src="./assets/Icon1.png" alt="Иконка станка">
                             <p class="intro-card__title">Запуск</p>
                             <p class="intro-card__desc">Пилот длительностью 14 дней в любой точке РФ. Монтаж без остановки производства и без подключения к ЧПУ.</p>
                         </div>
                         <div class="why-us-intro__card">
-                            <img src="./assets/Icon1.png" alt="">
+                            <img src="./assets/Icon1.png" alt="Иконка станка">
                             <p class="intro-card__title">Совместимость</p>
                             <p class="intro-card__desc">Универсальное решение для всех типов станков.</p>
                         </div>
                         <div class="why-us-intro__card">
-                            <img src="./assets/Icon1.png" alt="">
+                            <img src="./assets/Icon1.png" alt="Иконка станка">
                             <p class="intro-card__title">Интеграция</p>
                             <p class="intro-card__desc">Гибкая передача данных в любые MES и ERP через открытые протоколы.</p>
                         </div>
                         <div class="why-us-intro__card">
-                            <img src="./assets/Icon1.png" alt="">
+                            <img src="./assets/Icon1.png" alt="Иконка станка">
                             <p class="intro-card__title">Итог</p>
                             <p class="intro-card__desc">Минимальный порог входа. Объективный OEE и фактическая загрузка — в вашей системе учета с первого дня теста.</p>
                         </div>
@@ -222,7 +211,7 @@
                                 От 9000 за один станок в месяц.
                             </div>
                             <div class="table-cell" data-label="Риски">
-                                Минимальные. Если Вы не получили пользу и решили отказаться после тестового периода, - Вы потеряли один день вашего времени и стоимость выезда специалистов для монтажа.
+                                Минимальные. Если Вы не получили пользу и решили отказаться после тестового периода — Вы потеряли один день вашего времени и стоимость выезда специалистов для монтажа.
                             </div>
                             <div class="table-cell" data-label="Время">
                                 В среднем от 1 дня до недели
@@ -241,7 +230,7 @@
                         <div class="table-row">
                             <div class="row-title">АНАЛОГ</div>
                             <div class="table-cell" data-label="Затраты">
-                                Единоразово от 300 000 до 500 000 руб за один станок. Дальнейшая техподдержка - от 100 000 руб в год.
+                                Единоразово от 300 000 до 500 000 руб за один станок. Дальнейшая техподдержка — от 100 000 руб в год.
                             </div>
                             <div class="table-cell" data-label="Риски">
                                 Высокие. Если Вам не подошло решение, Вы потратили от месяца на согласование ТЗ и внедрение, а также ощутимую сумму на покупку оборудования и ПО (см. Затраты).
@@ -255,7 +244,7 @@
                                     <li>вплоть до диагностики узлов и агрегатов промышленного оборудования.</li>
                                 </ul>
                                 <div class="note-text">
-                                    Однако, эти сверх-функции не требуются для выявления реальной загруженности станков и причин простоя
+                                    Однако эти сверхфункции не требуются для выявления реальной загруженности станков и причин простоя
                                 </div>
                             </div>
                         </div>
@@ -270,15 +259,15 @@
                             <h3 class="why-us-card__title">Малое производство</h3>
                             <ul class="why-us-card__items">
                                 <li class="why-us-card__item">
-                                    <img src="./assets/Icon1.png" alt="">
+                                    <img src="./assets/Icon1.png" alt="Иконка станка">
                                     <p class="why-us-card__paragraph">До 10 станков</p>
                                 </li>
                                 <li class="why-us-card__item">
-                                    <img src="./assets/Icon1.png" alt="">
-                                    <p class="why-us-card__paragraph">1 день на подключение 1 день на настройку</p>
+                                    <img src="./assets/Icon1.png" alt="Иконка станка">
+                                    <p class="why-us-card__paragraph">1 день на подключение, 1 день на настройку</p>
                                 </li>
                                 <li class="why-us-card__item">
-                                    <img src="./assets/Icon1.png" alt="">
+                                    <img src="./assets/Icon1.png" alt="Иконка станка">
                                     <p class="why-us-card__paragraph">От 54 000 рублей в месяц</p>
                                 </li>
                             </ul>
@@ -287,15 +276,15 @@
                             <h3 class="why-us-card__title">Среднее производство</h3>
                             <ul class="why-us-card__items">
                                 <li class="why-us-card__item">
-                                    <img src="./assets/Icon1.png" alt="">
+                                    <img src="./assets/Icon1.png" alt="Иконка станка">
                                     <p class="why-us-card__paragraph">До 50 станков</p>
                                 </li>
                                 <li class="why-us-card__item">
-                                    <img src="./assets/Icon1.png" alt="">
-                                    <p class="why-us-card__paragraph">3 дня на подключение 3 дня на настройку</p>
+                                    <img src="./assets/Icon1.png" alt="Иконка станка">
+                                    <p class="why-us-card__paragraph">3 дня на подключение, 3 дня на настройку</p>
                                 </li>
                                 <li class="why-us-card__item">
-                                    <img src="./assets/Icon1.png" alt="">
+                                    <img src="./assets/Icon1.png" alt="Иконка станка">
                                     <p class="why-us-card__paragraph">От 90 000 рублей в месяц</p>
                                 </li>
                             </ul>
@@ -304,15 +293,15 @@
                             <h3 class="why-us-card__title">Крупное производство</h3>
                             <ul class="why-us-card__items">
                                 <li class="why-us-card__item">
-                                    <img src="./assets/Icon1.png" alt="">
+                                    <img src="./assets/Icon1.png" alt="Иконка станка">
                                     <p class="why-us-card__paragraph">От 50 станков</p>
                                 </li>
                                 <li class="why-us-card__item">
-                                    <img src="./assets/Icon1.png" alt="">
+                                    <img src="./assets/Icon1.png" alt="Иконка станка">
                                     <p class="why-us-card__paragraph">Поэтапное внедрение (подключение очередями)</p>
                                 </li>
                                 <li class="why-us-card__item">
-                                    <img src="./assets/Icon1.png" alt="">
+                                    <img src="./assets/Icon1.png" alt="Иконка станка">
                                     <p class="why-us-card__paragraph">Индивидуальные условия</p>
                                 </li>
                             </ul>
@@ -327,51 +316,51 @@
                 <div class="main__pluses-cards">
                     <div class="main__pluses-card">
                         <h3 class="pluses-card__title">Собственнику <br/>и гендиректору</h3>
-                        <ul class="pluses-card__exmaples">
+                        <ul class="pluses-card__examples">
                             <li class="pluses-card__example">
-                                <img src="./assets/Icon1.png" alt="">
+                                <img src="./assets/Icon1.png" alt="Иконка станка">
                                 <p>Прозрачность производства вместо «черного ящика».</p>
                             </li>
                             <li class="pluses-card__example">
-                                <img src="./assets/Icon1.png" alt="">
+                                <img src="./assets/Icon1.png" alt="Иконка станка">
                                 <p>Объективные данные, защищенные от фальсификации.</p>
                             </li>
                             <li class="pluses-card__example">
-                                <img src="./assets/Icon1.png" alt="">
+                                <img src="./assets/Icon1.png" alt="Иконка станка">
                                 <p>Полный контроль над предприятием и процессами.</p>
                             </li>
                         </ul>
                     </div>
                     <div class="main__pluses-card">
                         <h3 class="pluses-card__title">Директору<br/>производства</h3>
-                        <ul class="pluses-card__exmaples">
+                        <ul class="pluses-card__examples">
                             <li class="pluses-card__example">
-                                <img src="./assets/Icon1.png" alt="">
+                                <img src="./assets/Icon1.png" alt="Иконка станка">
                                 <p>Достоверная аналитика по всем сменам, включая ночные.</p>
                             </li>
                             <li class="pluses-card__example">
-                                <img src="./assets/Icon1.png" alt="">
+                                <img src="./assets/Icon1.png" alt="Иконка станка">
                                 <p>Рост дисциплины операторов.</p>
                             </li>
                             <li class="pluses-card__example">
-                                <img src="./assets/Icon1.png" alt="">
+                                <img src="./assets/Icon1.png" alt="Иконка станка">
                                 <p>Мгновенное выявление проблем, а не по итогам смены.</p>
                             </li>
                         </ul>
                     </div>
                     <div class="main__pluses-card">
                         <h3 class="pluses-card__title">Финансовому<br/>директору</h3>
-                        <ul class="pluses-card__exmaples">
+                        <ul class="pluses-card__examples">
                             <li class="pluses-card__example">
-                                <img src="./assets/Icon1.png" alt="">
+                                <img src="./assets/Icon1.png" alt="Иконка станка">
                                 <p>Реальная картина эффективности персонала.</p>
                             </li>
                             <li class="pluses-card__example">
-                                <img src="./assets/Icon1.png" alt="">
+                                <img src="./assets/Icon1.png" alt="Иконка станка">
                                 <p>Оценка фактической загрузки мощностей для решения: брать ли новые заказы.</p>
                             </li>
                             <li class="pluses-card__example">
-                                <img src="./assets/Icon1.png" alt="">
+                                <img src="./assets/Icon1.png" alt="Иконка станка">
                                 <p>Финансовая база для обоснования закупки оборудования.</p>
                             </li>
                         </ul>
@@ -416,7 +405,7 @@
                     <ul class="main__contacts-items">
                         <li class="main__contacts-item">
                             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#0079c2"><path d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
-                            <a href="tel:+71234567890">+7 (953) 691-73-82</a>
+                            <a href="tel:+79536917382">+7 (953) 691-73-82</a>
                         </li>
                         <li class="main__contacts-item">
                             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#0079c2"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
@@ -424,18 +413,18 @@
                         </li>
                         <li class="main__contacts-item">
                             <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#0079c2"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
-                            <span>обл.Кировская, г.Киров, ул.Профсоюзная, д.11</span>
+                            <span>обл. Кировская, г. Киров, ул. Профсоюзная, д. 11</span>
                         </li>
                     </ul>
                 </div>
-                <iframe class="main__contacts-right" src="https://yandex.ru/map-widget/v1/?um=constructor%3A939b251d474a998e3f33d0c98977f42b323fd400f33b939d6e622b70a6328ca2&amp;source=constructor" width="893" height="583" frameborder="0"></iframe>
+                <iframe class="main__contacts-right" title="Карта: г. Киров, ул. Профсоюзная, д. 11" src="https://yandex.ru/map-widget/v1/?um=constructor%3A939b251d474a998e3f33d0c98977f42b323fd400f33b939d6e622b70a6328ca2&amp;source=constructor" width="893" height="583" frameborder="0"></iframe>
             </div>
         </section>
     </main>
     <footer class="footer">
         <div class="container">
             <nav class="footer__nav">
-                <img src="./assets/Logo.png" alt="" srcset="" class="footer__nav-logo">
+                <img src="./assets/Logo.png" alt="PROMCONT — Промышленный контроль" srcset="" class="footer__nav-logo">
                 <ul class="footer__nav-items">
                     <li class="footer__nav-item"><a href="#main">Главная</a></li>
                     <li class="footer__nav-item"><a href="#how">Как работает</a></li>
@@ -451,10 +440,21 @@
                     <p>Без покупки оборудования.</p>
                 </div>
                 <ul class="footer__contacts-items">
-                    <li class="footer__contacts-item"></li>
-                    <li class="footer__contacts-item"></li>
-                    <li class="footer__contacts-item"></li>
-                    <li class="footer__contacts-item"></li>
+                    <li class="footer__contacts-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#0079c2"><path d="M760-480q0-117-81.5-198.5T480-760v-80q75 0 140.5 28.5t114 77q48.5 48.5 77 114T840-480h-80Zm-160 0q0-50-35-85t-85-35v-80q83 0 141.5 58.5T680-480h-80Zm198 360q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                        <a href="tel:+79536917382">+7 (953) 691-73-82</a>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#0079c2"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                        <a href="mailto:#">mail@mail.ru</a>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#0079c2"><path d="M536.5-503.5Q560-527 560-560t-23.5-56.5Q513-640 480-640t-56.5 23.5Q400-593 400-560t23.5 56.5Q447-480 480-480t56.5-23.5ZM480-186q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"/></svg>
+                        <span>обл. Кировская, г. Киров, ул. Профсоюзная, д. 11</span>
+                    </li>
+                    <li class="footer__contacts-item">
+                        <button class="footer__contacts-button overlay__button">Заказать звонок</button>
+                    </li>
                 </ul>
             </div>
         </div>

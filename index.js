@@ -1,18 +1,17 @@
-const headerContacts = document.querySelector('.header__contacts');
-const navContainer = document.querySelector('.header__nav-container.hidden');
-const observerCallback = (entries) => {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) {
-      navContainer.classList.remove('hidden');
-    } else {
-      navContainer.classList.add('hidden');
-    }
-  });
-};
-const observer = new IntersectionObserver(observerCallback, {
-  threshold: 0
-});
-observer.observe(headerContacts);
+const header = document.querySelector('.header')
+const menuIcon = document.querySelector('.menu__icon')
+const menuLinks = document.querySelectorAll('.header__menu a, .header__menu button')
+const toggleMenu = isOpen => {
+  header.classList.toggle('open', isOpen)
+  menuIcon.setAttribute('aria-expanded', isOpen)
+  menuIcon.setAttribute('aria-label', isOpen ? 'Закрыть меню' : 'Открыть меню')
+}
+menuIcon.addEventListener('click', () => {
+  toggleMenu(!header.classList.contains('open'))
+})
+menuLinks.forEach(link => {
+  link.addEventListener('click', () => toggleMenu(false))
+})
 
 const template_1 = document.querySelector('#template_1')
 const template_2 = document.querySelector('#template_2')

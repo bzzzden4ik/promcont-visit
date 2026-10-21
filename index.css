@@ -104,34 +104,57 @@ h2 {
     color: #0079c2;
 }
 /* HEADER */
-.header__contacts{
+.header-top {
     padding: 20px 0;
+}
+.header-top__item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header-top__item span {
+    color: #000;
+    cursor: pointer;
+    transition: .3s;
+}
+.header-top__item span:hover {
+    color: #0079c2;
+}
+.header-top__item:hover svg {
+    animation: shake 0.2s ease-in-out infinite;
+}
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.header__menu {
+    flex: 1;
+    margin-left: 50px;
+}
+.header__nav {
+    display: none;
 }
 .header__contacts-items {
     width: 100%;
     display: flex;
+    justify-content: flex-end;
     gap: 10px;
     align-items: center;
 }
-.header__contacts-item.location {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    flex: 1;
-}
-.header__contacts-item:nth-child(2) {
+.header__contacts-item:first-child {
     display: flex;
     align-items: center;
     margin-right: 10px;
     font-size: 18px;
 }
 .header__contacts-item span, .header__contacts-item a {
-    color: #000;
+    color: #fff;
     cursor: pointer;
     transition: .3s;
 }
 .header__contacts-item span:hover, .header__contacts-item a:hover {
-    color: #0079c2;
+    color: #a8ddff;
 }
 .header__contacts-item:hover svg {
   animation: shake 0.2s ease-in-out infinite;
@@ -145,34 +168,28 @@ h2 {
     display: none;
     cursor: pointer;
 }
+.menu__icon-close, .header.open .menu__icon-open {
+    display: none;
+}
+.header.open .menu__icon-close {
+    display: block;
+}
 .header__contacts-button {
-    color: #0079c2;
+    color: #fff;
     border-radius: 10px;
-    border: 1px solid #0079c2;
+    border: 1px solid #fff;
     padding: 15px 20px;
     transition: .3s;
 }
 .header__contacts-button:hover{
-    background-color: #0079c2;
-    color: #fff;
+    background-color: #fff;
+    color: #0079c2;
 }
 .header__nav-container {
     background-color: #0079c2;
     padding: 10px 0;
     border-top: 1px solid #9191915b;
     border-bottom: 1px solid #9191915b;
-}
-.header__nav-container.additional {
-    display: inline;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    transition: all 0.3s ease;
-}
-.header__nav-container.hidden {
-    display: none;
 }
 .header__nav-container .container {
     display: flex;
@@ -317,13 +334,13 @@ h2 {
     font-weight: 600;
     color: #000;
 }
-.main__topic-conslusion {
+.main__topic-conclusion {
     position: relative;
     border: 1px solid #bdbdbd;
     border-radius: 20px;
     padding: 40px;
 }
-.main__topic-conslusion::before {
+.main__topic-conclusion::before {
     width: 2px;
     height: 26px;
     content: '';
@@ -530,7 +547,7 @@ h2 {
     font-weight: 600;
     line-height: 1.5;
 }
-.pluses-card__exmaples {
+.pluses-card__examples {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -657,6 +674,44 @@ h2 {
 }
 .footer__contacts {
     padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.footer__contacts-title {
+    font-weight: 500;
+    line-height: 1.5;
+}
+.footer__contacts-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px 30px;
+}
+.footer__contacts-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.footer__contacts-item a, .footer__contacts-item span {
+    color: #000;
+    transition: .3s;
+}
+.footer__contacts-item a:hover {
+    color: #0079c2;
+}
+.footer__contacts-button {
+    color: #0079c2;
+    border-radius: 10px;
+    border: 1px solid #0079c2;
+    padding: 15px 20px;
+    transition: .3s;
+}
+.footer__contacts-button:hover {
+    background-color: #0079c2;
+    color: #fff;
 }
 /* TABLE */
 .comparison-table {
@@ -739,20 +794,18 @@ h2 {
         padding-top: 20px;
     }
     .main__hero .container {
-        flex-direction: column-reverse;
-        position: relative;
+        display: grid;
     }
     .main__hero-right, .main__hero-left {
         width: 100%;
+        grid-area: 1 / 1;
     }
     .main__hero .container {
         padding: 0;
     }
     .main__hero-left {
-        position: absolute;
-        left: 0;
-        top: 0;
-        margin-top: 30px;
+        position: relative;
+        padding: 30px 0;
         z-index: 10;
         color: #fff;
     }
@@ -768,16 +821,13 @@ h2 {
     .main__hero-right img {
         border-radius: 0;
         filter: brightness(0.3);
-        height: 75vh;
+        min-height: 75vh;
     }
     .main__hero-title {
         text-align: center;
     }
     .main__hero-paragraph {
         text-align: center;
-    }
-    .header__nav-items {
-        gap: 20px;
     }
     .main__topics-cards {
         flex-wrap: wrap;
@@ -795,6 +845,13 @@ h2 {
     .footer__nav-items {
         display: none;
     }
+    .footer__contacts {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__contacts-items {
+        justify-content: flex-start;
+    }
 }
 @media (max-width: 960px) {
     .main__hero {
@@ -810,8 +867,35 @@ h2 {
     .main__contacts-left, .main__contacts-right {
         width: 100%;
     }
-    .header__nav {
+    .header__menu {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        max-height: calc(100vh - 122px);
+        overflow-y: auto;
+        margin-left: 0;
+        padding: 20px 10px 30px 10px;
+        flex-direction: column;
+        gap: 30px;
+        background-color: #0079c2;
+        border-bottom: 1px solid #9191915b;
+    }
+    .header.open .header__menu {
+        display: flex;
+    }
+    .header__nav {
+        display: block;
+    }
+    .header__nav-items {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .header__contacts-items {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
     }
     .main__why-us-cards {
         flex-wrap: wrap;
@@ -840,7 +924,7 @@ h2 {
         font-size: 1.15rem;
         padding: 10px;
     }
-    .pluses-card__exmaples {
+    .pluses-card__examples {
         gap: 20px;
         padding: 10px;
     }
@@ -860,11 +944,11 @@ h2 {
     .main__topic-leave {
         padding: 25px;
     }
-    .main__topic-conslusion {
-        padding: 20px;
-    }
-    .header__contacts {
+    .header-top {
         display: none;
+    }
+    .main__topic-conclusion {
+        padding: 20px;
     }
     .table-header {
         display: none;
@@ -935,10 +1019,10 @@ h2 {
         font-size: 1.25rem !important;
     }
     .main__hero-left {
-        padding: 0 5px;
+        padding: 30px 5px;
     }
     .main__hero-right img {
-        height: calc(100vh - 122px + 25px);
+        min-height: calc(100vh - 122px + 25px);
     }
     .main__hero-title {
         font-size: 2rem;
@@ -964,6 +1048,9 @@ h2 {
     }
     .main__why-us-cards {
         gap: 40px;
+    }
+    .main__topic-form input, .main__topic-form button {
+        min-width: 100%;
     }
 }
 @media (max-width: 440px) {
